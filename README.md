@@ -1,3 +1,4 @@
 # MiniWebApp
 
-Creating Web Application for knowledge and show and tell purposes
+Building a Full Stack Web Application FrontEnd <-> API <-> Database
+
