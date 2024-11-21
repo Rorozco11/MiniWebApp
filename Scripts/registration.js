@@ -1,3 +1,18 @@
+// #region Navigating to and from Form Screen
+function navigateToForm() {
+    document.getElementById('home-screen').style.display = 'none';
+    document.getElementById('form-screen').style.display = 'block';
+}
+
+function navigateToHome() {
+    document.getElementById('form-screen').style.display = 'none';
+    document.getElementById('home-screen').style.display = 'block';
+}
+
+//#endregion
+
+
+// #region Collecting User Data
 document.getElementById('userForm').addEventListener('submit', async (event) => {
     event.preventDefault(); // Prevent default form submission behavior
 
@@ -15,8 +30,8 @@ document.getElementById('userForm').addEventListener('submit', async (event) => 
         lastName: lastName,
         email: email,
         password: password,
-        phoneNumber:phoneNumber,
-        address:address
+        phoneNumber: phoneNumber,
+        address: address
     };
 
     try {
@@ -41,3 +56,4 @@ document.getElementById('userForm').addEventListener('submit', async (event) => 
         console.error('Network error:', error);
     }
 });
+//#endregion collecting data end

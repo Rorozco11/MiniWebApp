@@ -1,81 +1,182 @@
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-/* Form Container */
-form {
-  background-color: #ffffff;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  width: 100%;
-}
-
-/* Heading */
-h1 {
-  text-align: center;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-/* Input Fields */
-label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-/* Input Focus Effect */
-input:focus {
-  outline: none;
-  border: 1px solid #5d9cec;
-  box-shadow: 0 0 5px rgba(93, 156, 236, 0.5);
-}
-
-/* Button Styles */
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #5d9cec;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #4a8adb;
-}
-
-/* Responsive Design */
-@media (max-width: 500px) {
-  form {
-      padding: 15px 20px;
+/* #region Phone View */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
 
-  input, button {
-      font-size: 14px;
+/* #region Header */
+  
+  h1 {
+    font-size: 1.5rem; 
+    text-align: center;
+    color: #444;
+    margin-bottom: 15px;
   }
-}
+
+  
+  #home-screen {
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+/* #endregion */
+
+/* #region Form Button */
+  #form-tab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5d9cec;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+
+  #form-tab:hover {
+    background-color: #4a8adb;
+  }
+  /* #endregion */
+
+/* #region Back button */
+  #back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5d9cec;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  #back-button:hover{
+    background-color: #4a8adb;
+  }
+
+  /* #endregion */
+
+/* #region Hidden Form Screen */
+  #form-container {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+  }
+
+  form h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+  }
+
+  form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  form input:focus {
+    outline: none;
+    border: 1px solid #5d9cec;
+    box-shadow: 0 0 5px rgba(93, 156, 236, 0.5);
+  }
+
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5d9cec;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  form button:hover {
+    background-color: #4a8adb;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 0.9rem; /* Smaller font for labels */
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Adjust input font size */
+  }
+
+  input:focus {
+    outline: none;
+    border: 1px solid #5d9cec;
+    box-shadow: 0 0 5px rgba(93, 156, 236, 0.5);
+  }
+
+
+  button:hover {
+    background-color: #4a8adb;
+  }
+  /* #endregion  */
+
+ 
+/* #endregion Phone View end */
+
+/* #region Larger Screens */
+  @media (min-width: 501px) {
+    form {
+      padding: 20px 30px;
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    input,
+    button {
+      font-size: 1rem;
+    }
+  }
+/* #endregion Larger Screens end */
