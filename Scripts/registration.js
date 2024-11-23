@@ -1,12 +1,6 @@
 // #region Navigating to and from Form Screen
 function navigateToForm() {
-    document.getElementById('home-screen').style.display = 'none';
-    document.getElementById('form-screen').style.display = 'block';
-}
-
-function navigateToHome() {
-    document.getElementById('form-screen').style.display = 'none';
-    document.getElementById('home-screen').style.display = 'block';
+    window.location.href = "/signup.html";
 }
 
 //#endregion

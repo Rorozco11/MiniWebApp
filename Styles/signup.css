@@ -1,57 +1,5 @@
-/* #region Phone View */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-/* #region Header */
-  
-  h1 {
-    font-size: 1.5rem; 
-    text-align: center;
-    color: #444;
-    margin-bottom: 15px;
-  }
-
-  
-  #home-screen {
-    text-align: center;
-    padding: 50px 20px;
-  }
-
-/* #endregion */
-
-/* #region Form Button */
-  #form-tab {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #5d9cec;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-  }
-
-  #form-tab:hover {
-    background-color: #4a8adb;
-  }
-  /* #endregion */
-
-/* #region Back button */
-  #back-button {
+/* #region Back to Home button */
+#back-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -73,7 +21,7 @@
 
   /* #endregion */
 
-/* #region Hidden Form Screen */
+/* #region signup form */
   #form-container {
     position: fixed;
     bottom: 60px;
@@ -158,25 +106,5 @@
   button:hover {
     background-color: #4a8adb;
   }
+
   /* #endregion  */
-
- 
-/* #endregion Phone View end */
-
-/* #region Larger Screens */
-  @media (min-width: 501px) {
-    form {
-      padding: 20px 30px;
-      max-width: 400px;
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    input,
-    button {
-      font-size: 1rem;
-    }
-  }
-/* #endregion Larger Screens end */

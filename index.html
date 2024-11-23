@@ -5,46 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helloooo</title>
-    <link rel="stylesheet" href="Styles/baseline.css">
+    <link rel="stylesheet" href="Styles/index.css">
 </head>
 
-<body>
-    <!-- #region Home Screen -->
-    <div id="home-screen">
-        <h1>Welcome</h1>
-        <p>Explore the page content here.</p>
-        <div id="form-tab" onclick="navigateToForm()">Sign Up</div>
+<header>
+    <div class="top-section">
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Customize</a></li>
+            </ul>
+            <a href="" class="cart-button">
+                <img src="Images/cart-icon.webp" alt="Cart" />
+            </a>
+            <a href="signup.html" class="signup-button">
+                <img src="Images/account.jpg" alt="Sign Up" />
+            </a>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </nav>
     </div>
-    <!-- #endregion Home Screen end -->
-    
-    <!-- #region Form Screen -->
-    <div id="form-screen" style="display: none;">
-        <div id="back-button" onclick="navigateToHome()">Back to Home</div>
-        <form id="userForm">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required><br><br>
+</header>
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required><br><br>
+<body>
+    <main>
+        <!-- #region Home Screen -->
+        <div id="body-section">
+            <h1>Welcome</h1>
+            <p>Explore the page content here.</p>
+        </div>
+        <!-- #endregion Home Screen end -->
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+    </main>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="phoneNumber" id="phoneNumber" name="phoneNumber" required><br><br>
-
-            <label for="address">Address:</label>
-            <input type="address" id="address" name="address" required><br><br>
-
-
-            <button type="submit">Register</button>
-        </form>
-    <!-- #endregion Form Screen end -->
-
-        <script src="Scripts/registration.js"></script>
+    <script src="Scripts/registration.js"></script>
 </body>
 
 </html>
